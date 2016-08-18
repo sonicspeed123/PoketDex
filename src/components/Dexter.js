@@ -34,12 +34,18 @@ class Dexter extends React.Component{
 				bodyType: 'quad',
 				abilities: ['Overgrow','Chlorophyll']
 			}
-		]}
+		], filteredPoke:[], filter:[]}
 	}
 
 	render(){
 		return(
 			<div>
+			//pokeinfo wll render individually selected pokemon
+				<PokeInfo />
+			//list will render a flitered/unfiltered list of pokemon	
+				<List />
+			//filter will set setting for filter function for list
+				<Filter />
 			</div>
 			)
 	}
