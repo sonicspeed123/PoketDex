@@ -6,9 +6,9 @@ class Dexter extends React.Component{
 	constructor(props){
 		super(props);
 		//database of pokemon
-		this.state = [
+		this.state = {pokemon: [
 			{
-				id: 001,
+				id: 1,
 				name: 'Bulbasaur',
 				description: "this is bulba",
 				type1: 'grass',
@@ -17,7 +17,7 @@ class Dexter extends React.Component{
 				abilities: ['Overgrow','Chlorophyll']
 			},
 			{
-				id: 002,
+				id: 2,
 				name: 'Ivysaur',
 				description: "this is Ivy",
 				type1: 'grass',
@@ -26,7 +26,7 @@ class Dexter extends React.Component{
 				abilities: ['Overgrow','Chlorophyll']
 			},
 			{
-				id: 003,
+				id: 3,
 				name: 'Venusaur',
 				description: "this is venu",
 				type1: 'grass',
@@ -34,13 +34,12 @@ class Dexter extends React.Component{
 				bodyType: 'quad',
 				abilities: ['Overgrow','Chlorophyll']
 			}
-		]
+		]}
 	}
 
 	render(){
 		return(
-			<div style={backgroundColor: 'red'}>
-
+			<div>
 			</div>
 			)
 	}
