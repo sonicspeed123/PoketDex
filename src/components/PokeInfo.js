@@ -5,13 +5,19 @@ class PokeInfo extends React.Component{
 	render() {
 		let {id, name, description, type1, type2, bodyType, abilities} = this.props.currentMon;
     return (
-    	<div>
-	    	<img className='col' src={"../src/images/"+ id +".jpg"} alt={name} />
-	    	<p className='col'>{name}</p>
-	    	<p className='col'>{description}</p>
-	    	<p className='col'>{type1}/{type2}</p>
-	    	<p className='col'>{bodyType}</p>
-	    	<p className='col'>{abilities}</p>
+    	<div style={{backgroundColor: '#c7b28a'}} className='row col'>
+	    	<div className='col s3'>
+		    	<p className=''>{name}</p>
+			    <p className=''>{type1}/{type2}</p>
+		    	<p className=''>{bodyType}</p>
+		    	<p className=''>{abilities}</p>
+		    </div>
+    		<div className='col'>
+		    	<img src={`../src/images/${id}.jpg`} alt={name} />
+	    	</div>
+		    <div className='col s3'>
+		    	<p className=''>{description}</p>
+		    </div>
     	</div>
     )
 	}
