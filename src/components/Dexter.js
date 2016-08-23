@@ -46,7 +46,7 @@ class Dexter extends React.Component{
 		return(
 			<div className='row'>
 				<PokeInfo currentMon={this.state.pokemon[2]} />
-{//				<List />
+{			<List pokemon={this.state.pokemon} />
 //				<Filter />
 }
 			</div>
